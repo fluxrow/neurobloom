@@ -1,57 +1,47 @@
-# 🌱 NeuroBloom — Learnings & Decisões
-
-> Decisões tomadas, por quê, e o que não repetir. Leia antes de cada sessão.
+# Decisões e Learnings — atualização 2026-03-27 (sessão 01 — continuação)
 
 ---
 
-## Decisões de Produto
+## DECISÃO CRÍTICA: Skinning por interesse especial
 
-### 2026-03-27
+**O que decidimos:**
+O app usa um sistema de "universos temáticos" baseados no interesse especial de cada criança. A atividade pedagógica é sempre a mesma — o que muda é o universo visual, sonoro e narrativo em que ela acontece.
 
-**A Fase 0 é a fundação de tudo**
-- Sem onboarding profundo, todas as camadas seguintes ficam genéricas
-- A Fase 0 precisa funcionar SEM laudo (maioria das famílias não tem) E absorver laudos quando existem
-- Deve ser capaz de substituir, em partes, o que um profissional faria na primeira consulta
-- Precisa ser acessível para uma mãe sozinha às 23h, sem formação técnica
+**Exemplos concretos:**
+- Criança com hiperfoco em trens → atividades acontecem em estações, vagões, trilhos
+- Criança com hiperfoco em abelhas → colmeia, flores, mel
+- Criança com hiperfoco em baleias → oceano, profundezas, sons de cetáceos
+- Criança com hiperfoco em chaleiras → cozinha, vapor, chá
 
-**O público-alvo real é quem não tem acesso**
-- A maioria das famílias no Brasil não consegue pagar ou acessar ABA, fonoaudiologia especializada, TO sensorial
-- O app não é complemento para quem já tem tudo — é a única ferramenta estruturada para quem não tem nada
-- Isso define tom, linguagem, complexidade das perguntas, e design de acessibilidade
+**Por que isso importa além do visual:**
+O interesse especial não é decoração — é o veículo de aprendizado. ABA e ESDM já provam isso: intervenção centrada nos interesses da criança tem resultado significativamente superior. O NeuroBloom vai ser o primeiro app que transforma isso em arquitetura real de sistema.
 
-**Não se basear em um único caso para definir o questionário**
-- Usar estudos públicos e literatura científica para formular cenários singulares
-- O caso real interno (TEA N1 + TDAH + TDE + AH) serve como validação, não como template
-- Objetivo: munir o app de informações sobre cenários reais e variados
+**Implicações técnicas:**
+- Sistema de "skins" modular: cada universo é um pacote de assets + sons + narrativa
+- O motor de atividades permanece idêntico entre universos
+- No cadastro, pais escolhem (ou constroem) o universo do filho
+- Universo pode evoluir conforme o interesse da criança muda
+- Possível expansão: pais criam universos customizados (fase posterior)
 
-**Dados: foco interno por enquanto**
-- Não abrir para pesquisadores externamente ainda
-- Construir a base, validar a metodologia, garantir volume e consistência
-- Depois, o banco de dados se torna ativo valioso para parcerias acadêmicas
-
-**Interoceptividade é o diferencial mais subestimado**
-- Poucos apps abordam o "8º sentido"
-- É a raiz de meltdowns "inexplicáveis", dificuldades de regulação, problemas com alimentação/higiene
-- Traduzir em mini check-ins visuais dentro das sessões
+**Implicações de dados:**
+- Correlacionar engajamento × universo ativo → validar hipótese de que interesse especial aumenta retenção
+- Detectar quando a criança perde interesse no universo atual (queda de engajamento) → sugerir mudança
+- Dado único que nenhum estudo clínico tem: qual interesse especial correlaciona com melhor performance em qual domínio
 
 ---
 
-## O Que Não Fazer
+## DECISÃO: Construir de dentro pra fora
 
-- Não criar questionário genérico de TEA — precisa mapear combinações específicas de comorbidades
-- Não prometer cura ou resultados garantidos — nunca
-- Não substituir o profissional na narrativa — sempre complementar
-- Não inflar expectativas sobre abordagens emergentes (microbioma, TMS, etc.) — informar apenas
-- Não ignorar processamento sensorial — afeta ~90% do público e determina o design do próprio app
+Antes de qualquer tela ou questionário, mapear a realidade vivida pelas famílias a partir de estudos qualitativos brasileiros. O app deve resolver o que as famílias realmente enfrentam — não o que os frameworks clínicos dizem que elas enfrentam.
+
+**O que pesquisar:**
+- Experiência qualitativa de pais de crianças no espectro no Brasil
+- Principais dores do dia a dia (não do diagnóstico — do cotidiano real)
+- O que as famílias já tentaram e o que funcionou ou não
+- Barreiras de acesso a terapia no Brasil
+- Como as famílias descrevem os avanços dos filhos (linguagem real, não clínica)
 
 ---
 
-## Referências-Chave
-
-- ABA: evidência nível A, Frontiers in Pediatrics 2025
-- ESDM: validado em RCT desde 18 meses de idade
-- Interoceptividade: Mahler IC Curriculum, estudo 25 semanas (PMC9045986)
-- Microbioma: Frontiers in Microbiology 2025, meta-análise FMT
-- Comorbidades: DSM-5, Canal Autismo, Autismo e Realidade BR
-- TDAH + TEA: 50–70% comorbidade (blog.matheustriliconeurologia.com.br)
-- Dupla excepcionalidade: pepsic.bvsalud.org, Instituto Inclusão Brasil
+## Próximo passo definido
+Pesquisar estudos qualitativos sobre experiência real de famílias + construir o mapa de realidade que vai fundamentar toda a Fase 0 e o design de atividades.

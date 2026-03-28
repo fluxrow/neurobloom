@@ -3,8 +3,8 @@
 ---
 
 ## Status Geral
-**Fase atual:** 0 — Brainstorm & Fundação  
-**Próximo marco:** Estrutura completa da Fase 0 (questionário de onboarding)
+**Fase atual:** 0-B — Estrutura do onboarding profundo  
+**Próximo marco:** Fechar questionário-base, modelo de dados do perfil e regras iniciais de personalização
 
 ---
 
@@ -20,11 +20,13 @@
 - [x] Documentação inicial no Obsidian + GitHub
 
 ### 🔄 Fase 0-B — Estrutura do Onboarding (em andamento)
-- [ ] Definir todos os domínios de coleta da Fase 0
-- [ ] Estruturar questionário completo (suporte a laudos, sem laudos)
-- [ ] Definir modelo de dados do perfil da criança
+- [x] Consolidar visão do produto com norte-estrela, camadas, estímulos e posicionamento
+- [x] Definir domínios centrais de coleta da Fase 0
+- [x] Estruturar questionário-base progressivo (sem laudo e com laudo)
+- [x] Definir modelo conceitual inicial do perfil da criança
 - [ ] Mapear como cada resposta influencia as camadas 1–4
-- [ ] Validar com estudos públicos sobre cenários singulares
+- [ ] Definir score/confiança das informações autorrelatadas
+- [ ] Validar os blocos com estudos públicos e relatos de famílias reais
 
 ### ⏳ Fase 1 — Motor de Personalização (próxima)
 - [ ] Algoritmo que gera plano inicial por perfil
@@ -49,8 +51,9 @@
 | Data | Sessão | O que foi feito |
 |------|--------|-----------------|
 | 2026-03-27 | 01 | Brainstorm fundacional: visão, metodologia, comorbidades, concorrentes, abordagens emergentes |
+| 2026-03-27 | 02 | Consolidação da tese do produto e estrutura inicial da Fase 0: overview, questionário-base e modelo conceitual do perfil |
 
 ---
 
 ## Próxima Sessão
-**Foco:** Estrutura completa da Fase 0 — domínios de coleta, questionário, modelo de dados
+**Foco:** Traduzir a Fase 0 em lógica operacional: perguntas por bloco, tipos de resposta, pesos, flags e impacto nas camadas 1–4
