@@ -1,4 +1,4 @@
-# NeuroBloom — MASTER (atualizado 2026-03-27, sessão 01)
+# NeuroBloom — Master Document
 
 > Plataforma mobile-first para potencializar o desenvolvimento de crianças e adultos no espectro autista, com personalização profunda por perfil de comorbidades.
 
@@ -14,18 +14,17 @@
 
 ---
 
-## Realidade das Famílias Brasileiras (base dos estudos)
+## Realidade das Famílias Brasileiras
 
-Fonte: Retratos do Autismo no Brasil 2023 (Genial Care + Tismoo, n=2.200) + estudos qualitativos SciELO/LILACS 2020–2024.
+| Dado | % | Implicação de design |
+|------|---|----------------------|
+| Medo do futuro a longo prazo | 79% | Painel mostra marcos de autonomia, não atividades |
+| Dificuldades financeiras | 73% | App é ferramenta principal, não complemento. Offline-first. |
+| Sem tempo para descanso | 68% | Sessões de 3–5 min. Celebrações como notificação para os pais. |
+| Sem contato prévio com TEA | 64% | Funciona sem laudo. Linguagem de pai, não de prontuário. |
+| Relação fragilizada com saúde | recorrente | Gera relatórios exportáveis para médico e plano de saúde. |
 
-| Dado | % | O que significa para o app |
-|------|---|---------------------------|
-| Medo do futuro a longo prazo | 79% | Painel dos pais mostra marcos de autonomia, não só atividades |
-| Dificuldades financeiras com tratamento | 73% | App é ferramenta principal, não complemento. Funciona offline. |
-| Sem tempo para descanso (exaustão) | 68% | Sessões de 3–5 min. Celebrações chegam como notificação para os pais. |
-| Sem contato prévio com TEA antes do diagnóstico | 64% | Funciona sem laudo. Linguagem de pai, não de prontuário. |
-| Relação fragilizada com profissionais | recorrente | Gera relatórios para o médico. Valida o que os pais observam. |
-
+Custo real do tratamento: R$ 20.000–30.000/mês. Renda média BR: R$ 2.808.
 86% das cuidadoras são mulheres. 1 em cada 4 está no espectro ela mesma.
 
 ---
@@ -34,39 +33,45 @@ Fonte: Retratos do Autismo no Brasil 2023 (Genial Care + Tismoo, n=2.200) + estu
 
 1. **Baseado em evidências** — medicina, estudos e terapias reais. Sem achismo.
 2. **Não substitui profissionais** — somos o que acontece nas outras 23h do dia.
-3. **Personalização real** — não "tem TEA", mas qual combinação exata de comorbidades, nível de suporte, pontos fortes, perfil sensorial.
+3. **Personalização real** — não "tem TEA": qual combinação exata de comorbidades, nível de suporte, pontos fortes, perfil sensorial.
 4. **Acessível** — funciona sem laudo. Para famílias sem acesso a terapeutas.
 5. **Multimodal** — voz, texto, imagem, toque, animação, vibração.
-6. **Dados com propósito** — cada família está construindo o maior banco de dados sobre neurodivergência do Brasil.
+6. **Dados com propósito** — cada família constrói o maior banco de dados sobre neurodivergência do Brasil.
 
 ---
 
-## Universos Temáticos — Pilar de Inovação
+## Os Dois Pilares de Inovação
 
+### 1. Universos Temáticos
 O interesse especial não é decoração — é o canal de aprendizado.
+Motor pedagógico fixo. Universo visual/sonoro/narrativo variável por criança.
+- Pais escolhem no cadastro, trocam quando o interesse mudar
+- Base científica: ABA e ESDM provam que intervenção centrada no interesse especial tem resultado superior
+- Dado único: correlação universo × domínio × performance
 
-**Como funciona:**
-- Motor pedagógico idêntico em todos os universos (lógica, reforço, coleta de dados)
-- O que muda: visuais, sons, personagens, narrativa, metáforas
-- Pais escolhem o universo no cadastro, podem trocar quando o interesse mudar
-- Universos disponíveis: trens, abelhas, baleias, espaço, dinossauros, culinária, e dezenas outros
-- Expansão futura: pais criam universos customizados
+### 2. Moment Cards
+Conteúdo situacional pronto para crises cotidianas, usando o universo da criança.
+Pai abre o app no momento exato do conflito — app entrega narrativa personalizada em segundos.
 
-**Base científica:** ABA e ESDM provam que intervenção centrada no interesse especial tem resultado superior.
+**Exemplo:** criança recusa escovar dentes (universo: trens)
+> "Apito! O Expresso da Madrugada está chegando na Estação dos Dentes Brilhantes! O maquineiro [nome] precisa escovar antes da partida! 🚂"
 
-**Dado único que vamos gerar:** correlação entre universo temático × domínio de atividade × performance — algo que nenhum estudo clínico tem.
+Categorias: higiene, alimentação, transições, escola, regulação emocional, social.
+Ver: `MomentCards/MOMENT-CARDS-OVERVIEW.md`
 
 ---
 
 ## Arquitetura de Camadas
 
-| Camada | Nome | Foco Principal |
-|--------|------|----------------|
+| Camada | Nome | Foco |
+|--------|------|------|
 | **0** | Mapeamento do Perfil | DNA NeuroBloom — funciona sem laudo, absorve laudo |
 | **1** | Fundação e Regulação Sensorial | Sono, alimentação, rotinas, integração sensorial |
 | **2** | Habilidades Funcionais | Comunicação, atenção, imitação, AVDs |
 | **3** | Potencial e Talentos | Cognitivo, criativo, acadêmico, altas habilidades |
 | **4** | Social e Autonomia | Habilidades sociais, teoria da mente, independência |
+
+**Moment Cards:** camada transversal. Ativa em qualquer momento do dia, fora das sessões formais.
 
 ---
 
@@ -103,29 +108,38 @@ O interesse especial não é decoração — é o canal de aprendizado.
 | TOC | ~17% |
 | TDE (dislexia/disgrafia) | 5–10% |
 
-**Caso real interno:** TEA Nível 1 + TDAH + TDE + Altas Habilidades.
+**Caso real interno:** TEA N1 + TDAH + TDE + Altas Habilidades.
 
 ---
 
-## Status do Brainstorm
+## Estrutura do Vault
 
-8 blocos fundamentais. Bloco 1 concluído. Bloco 2 em andamento.
-Ver ROADMAP.md para detalhes.
+```
+/NeuroBloom/
+├── MASTER.md
+├── ROADMAP.md
+├── LEARNINGS.md
+├── AGENTE.md
+├── Fase0/
+│   └── FASE0-OVERVIEW.md
+├── MomentCards/
+│   └── MOMENT-CARDS-OVERVIEW.md
+└── Metodologia/ (a popular)
+```
 
 ---
 
 ## Stack Técnico (a definir)
 - Mobile: React Native ou Flutter
 - Backend: a definir
-- IA/ML: motor adaptativo por perfil
+- IA/ML: motor adaptativo por perfil + geração de Moment Cards
 - Dados: criptografados, LGPD-compliant, offline-first
 
 ---
 
 ## Time
 - **Cauã Farias** — fundador | GitHub: `fbcfarias`
-- GitHub repo: https://github.com/fluxrow/neurobloom
-- Obsidian: `/Fluxrow/NeuroBloom/`
+- Repo: https://github.com/fluxrow/neurobloom
 
 ---
 
